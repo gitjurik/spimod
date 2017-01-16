@@ -125,7 +125,7 @@ ssize_t spimod_write(struct file *flip, const char *buf, size_t length, loff_t *
 
         return SUCCESS;
     } 
-    else if (msg[0] == 'w') // actually write data to SPI wADDD
+    else if (msg[0] == 'w') // write data to SPI wADDD
     {
         iowrite32(0x0, pSPI_IER);
 
